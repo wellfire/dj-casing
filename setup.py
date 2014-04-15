@@ -30,7 +30,7 @@ setup(
     long_description=readme,
     author='Ben Lopatin',
     author_email='ben@wellfire.co',
-    url='https://github.com/bennylope/djcasing',
+    url='https://github.com/wellfire/dj-casing',
     include_package_data=True,
     install_requires=[
         'Django',
