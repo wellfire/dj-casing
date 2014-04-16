@@ -1,3 +1,4 @@
 include LICENSE
 include README.rst
+include djcasing.py
 recursive-include djcasing *.html *.png *.gif *js *jpg *jpeg *svg *py
