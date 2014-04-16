@@ -4,14 +4,16 @@
 import os
 import sys
 
-import djcasing
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-version = djcasing.__version__
+with open("djcasing.py", "r") as module_file:
+    for line in module_file:
+        if line.startswith("__version__"):
+            version_string = line.split("=")[1]
+            version = version_string.strip().replace("'", "")
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
